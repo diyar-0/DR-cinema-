@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: ltr; /* Default left-to-right for English */
+        }
+
+        /* Right-to-left for Arabic */
+        .rtl {
+            direction: rtl;
+        }
+
+        /* Kurdish (ckb) language direction - left-to-right */
+        .ckb {
+            direction: rtl;
+        }
+
+        #text-ar, #text-ckb ,#text-ckb2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="en-btn">English</button>
+    <button id="ar-btn">Arabic</button>
+    <button id="ckb-btn">Kurdish</button>
+
+    <div id="content">
+        <p id="text-en">Hello, welcome to my website!</p>
+        <p id="text-ar">مرحبًا، مرحبًا بكم في موقعي!</p>
+        <p id="text-ckb">سڵاو، خوش آمدید بۆ ماڵپەڕەکانی!</p>
+        <p id="text-ckb2">slaw</p>
+    </div>
+    <div>
+    </div>
+
+    <script>
+        // English button click event
+        document.getElementById('en-btn').addEventListener('click', function() {
+            document.getElementById('text-en').style.display = 'block';
+            document.getElementById('text-ar').style.display = 'none';
+            document.getElementById('text-ckb').style.display = 'none';
+            document.getElementById('text-ckb2').style.display = 'none';
+
+            document.body.classList.remove('rtl', 'ckb'); // Remove Arabic and Kurdish direction
+        });
+
+        // Arabic button click event
+        document.getElementById('ar-btn').addEventListener('click', function() {
+            document.getElementById('text-en').style.display = 'none';
+            document.getElementById('text-ar').style.display = 'block';
+            document.getElementById('text-ckb').style.display = 'none';
+            document.getElementById('text-ckb2').style.display = 'none';
+
+            document.body.classList.add('rtl'); // Add right-to-left direction for Arabic
+            document.body.classList.remove('ckb'); // Remove Kurdish direction
+        });
+
+        // Kurdish button click event
+        document.getElementById('ckb-btn').addEventListener('click', function() {
+            document.getElementById('text-en').style.display = 'none';
+            document.getElementById('text-ar').style.display = 'none';
+            document.getElementById('text-ckb').style.display = 'block';
+            document.getElementById('text-ckb2').style.display = 'block';
+            document.body.classList.add('ckb'); // Set left-to-right direction for Kurdish
+            document.body.classList.remove('rtl'); // Remove Arabic right-to-left
+        });
+    </script>
+
+</body>
+</html>
