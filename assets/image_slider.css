@@ -1,0 +1,124 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .slider {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    }
+
+    .slide-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .slide-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .slide-meta div {
+        display: flex;
+        align-items: center;
+        /* font-size: 14px; */
+    }
+
+    .slide-meta i {
+        margin-right: 5px;
+        color: #f5a623;
+    }
+
+    .rating {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 3px 8px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .slide-description {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        opacity: 0.9;
+    }
+
+    .btnx {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* background: rgba(108, 114, 126, 0.78); */
+        border: none;
+        border-radius: 50%;
+        /* color: white; */
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    .btnx:hover {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    .btnx-prev {
+        left: 20px;
+    }
+
+    .btnx-next {
+        right: 20px;
+    }
+
+    .indicators {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    .indicator {
+        /* width: 12px;
+        height: 12px; */
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.41);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .indicator.active {
+        background: #ffffffff;
+        transform: scale(1.2);
+    }
