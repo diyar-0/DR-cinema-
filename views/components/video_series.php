@@ -1,8 +1,4 @@
 <?php
-// Connect to database
-// $conn = new mysqli(...);
-
-// film_id پێویستە دیاری بکەیت
 $sql_movies = "SELECT f.*, s.video_url, s.season_number, s.episode_number
 FROM films_db f
 JOIN films_series s ON f.id = s.film_id
@@ -79,10 +75,6 @@ $result_movies = $conn->query($sql_movies);
                 iframe.src = url + "?autoplay=1"; // load video
                 loader.classList.add('hidden'); // hide loader
             }, 1000);
-
-            // if (window.innerWidth < 768) {
-            //     window.scrollTo({ top: 0, behavior: 'smooth' });
-            // }
             if (window.innerWidth < 768) {
                 document.getElementById("videoLoader").scrollIntoView({
                     behavior: 'smooth',

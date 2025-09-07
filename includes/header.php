@@ -168,12 +168,12 @@
               <?php if (!empty($picture)): ?>
                 <img class="rounded-full w-[20px] h-[20px] bg-gray-800" src="<?php echo $picture ?>" alt="">
               <?php else: ?>
-                <div class="rounded-full w-[20px] h-[20px] flex items-center justify-center bg-gray-600 text-white font-bold">
+                <div translate="no" class="rounded-full w-[20px] h-[20px] flex items-center justify-center bg-gray-600 text-white font-bold">
                   <?php echo $first_letter_name; ?>
                 </div>
               <?php endif; ?>
           </div>
-          <div class="font-semibold text-season-btn text-sm nav-item-text ">
+          <div translate="no" class="font-semibold text-season-btn text-sm nav-item-text ">
             <?php echo htmlspecialchars($_SESSION['username']); ?>
           </div>
           <div>

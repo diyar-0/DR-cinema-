@@ -48,7 +48,7 @@
                         $user_comment_id = $row_comment['user_id'];
                         $comment = $row_comment['comment'];
                 ?>
-                        <div id="result" class="py-2 my-2 bg-gray-950 bg-opacity-70 rounded-3 p-3 border-dark result"
+                        <div id="result" class="hover:bg-opacity-50 py-2 my-2 bg-gray-950 bg-opacity-70 rounded-3 p-3 border-dark result"
                             data-id="<?= $comment_id ?>"
                             data-user-id="<?= $user_comment_id ?>">
 
@@ -64,12 +64,12 @@
                                 <?php if (!empty($row_comment['picture'])): ?>
                                     <img class="rounded-full w-9 h-9" src="<?php echo $row_comment['picture']; ?>" alt="">
                                 <?php else: ?>
-                                    <div class="rounded-full w-9 h-9 flex items-center justify-center bg-gray-600 text-white font-bold">
+                                    <div translate="no" class="rounded-full w-9 h-9 flex items-center justify-center bg-gray-600 text-white font-bold">
                                         <?php echo $first_letter; ?>
                                     </div>
                                 <?php endif; ?>
 
-                                <span class="font-semibold mx-2 text-light"><?php echo $row_comment['name_user']; ?></span>
+                                <span translate="no" class="font-semibold mx-2 text-light"><?php echo $row_comment['name_user']; ?></span>
                                 <span class="time-ago text-gray-400 text-[11px]" data-time="<?php echo $row_comment['created_at']; ?>"></span>
                             </div>
 

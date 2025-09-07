@@ -643,7 +643,7 @@
                 </div>
                 <div class="form-group w-100 flex-fill">
                     <div class="input-group w-100 d-flex flex-column gap-2">
-                        <div class="flex"><i class="bi bi-image-fill me-1"></i>Card image</div>
+                        <div class="flex"><i class="bi bi-image-fill me-1"></i>back image</div>
                         <label class="btn border bg-white border-purple-600 btn_purpel_upload rounded-2 w-100 d-flex align-items-center justify-content-center gap-2" for="image2" style="cursor:pointer;">
                             <i class="fas fa-upload"></i> &nbsp; Choose Image
                         </label>
