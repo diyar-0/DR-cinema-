@@ -1,15 +1,8 @@
 <?php
-
-// session_start();
-
-// ---- Fake user session for testing ----
-
-// ---- Database connection ----
 $conn = new mysqli("localhost", "root", "", "movies_db");
 if ($conn->connect_error) {
     die("DB Error: " . $conn->connect_error);
 }
-
 // ---- Message for user feedback ----
 $message = "";
 

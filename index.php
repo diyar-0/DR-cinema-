@@ -86,10 +86,4 @@
        });
      });
    </script>
-
-   <?php include("warning.php"); ?>
-
-
-
-
-   
+<?php include("warning.php"); ?>

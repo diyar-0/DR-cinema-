@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
 <?php
-// session_start(); // دڵنیابە سێشنەکەت دەستی پێکردووە
 
-// DB Config
 $servername = "localhost";
 $username = "root";
 $password = "";

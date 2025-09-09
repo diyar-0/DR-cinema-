@@ -98,30 +98,6 @@
             font-size: 1rem;
             outline: none;
         }
-/* 
-        select:nth-child(1) {
-            background-image: url("https://cdn-icons-png.flaticon.com/512/1710/1710196.png");
-        }
-
-        select:nth-child(2) {
-            background-image: url("https://www.freepnglogos.com/uploads/globe-png/blue-globe-transparent-sporetesting-39.png");
-        }
-
-        select:nth-child(3) {
-            background-image: url("https://cdn3d.iconscout.com/3d/premium/thumb/translate-3d-icon-download-in-png-blend-fbx-gltf-file-formats--translation-language-dictionary-conversation-discussion-vote-pack-network-communication-icons-7475583.png");
-        }
-
-        select:nth-child(4) {
-            background-image: url("https://www.icons101.com/icon_png/size_512/id_81538/Questiontypeonecorrect.png");
-        }
-
-        select:nth-child(5) {
-            background-image: url("https://cdn-icons-png.flaticon.com/512/10691/10691802.png");
-        }
-
-        select:nth-child(6) {
-            background-image: url("https://images.seeklogo.com/logo-png/40/2/imdb-internet-movie-database-logo-png_seeklogo-401602.png");
-        } */
     </style>
 </head>
 <!-- <i class="text-danger material-icons px-2 fs-2">&#xe43a;</i> -->
